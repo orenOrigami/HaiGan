@@ -49,3 +49,56 @@ input[type="text"], input[type="password"] {
 .btn-login:hover {
     background-color: #45a049;
 }
+.navbar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-create-call {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-create-call:hover {
+    background-color: #45a049;
+}
+
+.calls-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.calls-table th, .calls-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.calls-table th {
+    background-color: #f2f2f2;
+}
+
+.btn-view {
+    background-color: #2196F3;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-view:hover {
+    background-color: #0b7dda;
+}
