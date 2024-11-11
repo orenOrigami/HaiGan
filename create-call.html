@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Widespread Call</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Create New Widespread Call</h1>
+        <a href="dashboard.html" class="back">Back to Dashboard</a>
+    </nav>
+
+    <div class="container">
+        <form id="create-call-form">
+            <h2>Select Recipients</h2>
+            <label for="recipients">Choose recipients (e.g., John Doe, Jane Smith):</label>
+            <input type="text" id="recipients" name="recipients" placeholder="Enter names separated by commas" required>
+
+            <h2>Choose Recording</h2>
+            <label for="recording">Select or create a new recording:</label>
+            <select id="recording" name="recording" required>
+                <option value="recording1.mp3">Recording 1</option>
+                <option value="recording2.mp3">Recording 2</option>
+                <option value="new">Create new recording</option>
+            </select>
+            <button type="button" class="btn-record" onclick="openRecordingIframe()">Create New Recording</button>
+
+            <iframe id="recording-iframe" src="https://free-online-recording-service.com" style="display:none; width:100%; height:400px;"></iframe>
+
+            <h2>Call Properties</h2>
+            <label for="retries">Number of retries:</label>
+            <input type="number" id="retries" name="retries" min="1" max="10" required>
+
+            <label for="interval">Interval between retries (minutes):</label>
+            <input type="number" id="interval" name="interval" min="1" required>
+
+            <button type="submit" class="btn-submit">Create Call</button>
+        </form>
+    </div>
+
+    <script>
+        function openRecordingIframe() {
+            const iframe = document.getElementById('recording-iframe');
+            iframe.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
